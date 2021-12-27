@@ -24,8 +24,10 @@ export default function Post(props){
   }, []);
 
     return(
-        <div>
-            {data.map(item => (<ImgMediaCard title={item.Title} link={item.Link}/>))}
+        <div style={{margin: 'auto', width: '15%', padding: '10px'}}>
+            
+            {data.map(item => (<ImgMediaCard title={item.Title} link={item.Link} />))}
+            
         </div>
     )
 }

@@ -9,7 +9,7 @@ export default function Post(props){
 
   useEffect(async () => {
       const interval = setInterval(() => {
-        axios.get(process.env.URL)
+        axios.get('http://164.90.228.249:4000/')
         .then(res => {
           console.log(res)
           setData(res.data)

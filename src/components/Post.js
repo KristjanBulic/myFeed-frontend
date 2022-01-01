@@ -9,7 +9,7 @@ export default function Post(props){
 
   useEffect(async () => {
       const interval = setInterval(() => {
-        axios.get('http://localhost:4000/')
+        axios.get(process.env.URL)
         .then(res => {
           console.log(res)
           setData(res.data)
